@@ -1,0 +1,790 @@
+# dut sample interval=1s duration=30s host=e49d73e1b838 kernel=5.4.164
+=== IRQ_START 15:29:06 ===
+           CPU0       CPU1       CPU2       CPU3       
+  4:    4152641    2981957    2820021    3999993     GIC-0  20 Level     arch_timer
+  6:          0          0          0          0     GIC-0  39 Level     arch_mem_timer
+  8:          0          0          0          0     GIC-0  23 Level     arm-pmu
+  9:          0          0          0          0     GIC-0 239 Level     bam_dma
+ 11:        273          0          0          0     GIC-0 270 Level     bam_dma
+ 13:          7          0          0          0     GIC-0 338 Level     msm_serial0
+ 14:      12353          0          0          0     GIC-0 127 Level     78b5000.spi
+ 15:      63365          0          0          0     GIC-0 178 Level     bam_dma
+ 17:          0          0          0          0     GIC-0 410 Level     edma_txcmpl
+ 18:          0          0          0          0     GIC-0 386 Level     edma_rxfill
+ 19:          0          0          0          0     GIC-0 378 Level     edma_rxdesc
+ 20:          0          0          0          0     GIC-0 411 Level     edma_misc
+ 21:   12085795          0          0          0     GIC-0 434 Edge      nss_empty_buf_sos
+ 22:   12534455          0          0          0     GIC-0 433 Edge      nss_empty_buf_queue
+ 23:          0          0          0          0     GIC-0 432 Edge      nss-tx-unblock
+ 24:  168226360          0          0          0     GIC-0 431 Edge      nss_queue0
+ 25:          0   80237945          0          0     GIC-0 430 Edge      nss_queue1
+ 26:          0          0   78739297          0     GIC-0 429 Edge      nss_queue2
+ 27:          0          0          0   78198244     GIC-0 428 Edge      nss_queue3
+ 28:          0          0          0          0     GIC-0 427 Edge      nss_coredump_complete
+ 29:          0          0          0          0     GIC-0 426 Edge      nss_paged_empty_buf_sos
+ 30:          0          0          0          0     GIC-0 425 Edge      nss_profile_dma
+ 32:          0          0          0          0     GIC-0  35 Edge      wdt_bark
+ 33:          0          0          0          0     GIC-0 357 Edge      q6v5 wdog
+ 37:          4          0          0          0     GIC-0 348 Edge      ce0
+ 38:   49092730          0          0          0     GIC-0 347 Edge      ce1
+ 39:      85107          0          0          0     GIC-0 346 Edge      ce2
+ 40:     171012          0          0          0     GIC-0 343 Edge      ce3
+ 42:          0          0          0          0     GIC-0 443 Edge      ce5
+ 44:          1          0          0          0     GIC-0  72 Edge      ce7
+ 46:          0          0          0          0     GIC-0 334 Edge      ce9
+ 47:          0          0          0          0     GIC-0 333 Edge      ce10
+ 48:          0          0          0          0     GIC-0  69 Edge      ce11
+ 55:          0          0          0          0     GIC-0 323 Edge      reo2ost-exception
+ 56:    4208712          0          0          0     GIC-0 322 Edge      wbm2host-rx-release
+ 57:       2510          0          0          0     GIC-0 321 Edge      reo2host-status
+ 58:    5392704          0          0          0     GIC-0 320 Edge      reo2host-destination-ring4
+ 59:    5389458          0          0          0     GIC-0 271 Edge      reo2host-destination-ring3
+ 60:    5393149          0          0          0     GIC-0 268 Edge      reo2host-destination-ring2
+ 61:    8064289          0          0          0     GIC-0 267 Edge      reo2host-destination-ring1
+ 66:        175          0          0          0     GIC-0 262 Edge      ppdu-end-interrupts-mac2
+ 67:   22879220          0          0          0     GIC-0 261 Edge      ppdu-end-interrupts-mac1
+ 69:          1          0          0          0     GIC-0 256 Edge      rxdma2host-monitor-status-ring-mac2
+ 70:          1          0          0          0     GIC-0 255 Edge      rxdma2host-monitor-status-ring-mac1
+ 72:          1          0          0          0     GIC-0 215 Edge      host2rxdma-host-buf-ring-mac2
+ 73:         14          0          0          0     GIC-0 212 Edge      host2rxdma-host-buf-ring-mac1
+ 75:          0          0          0          0     GIC-0 210 Edge      rxdma2host-destination-ring-mac2
+ 76:          0          0          0          0     GIC-0 209 Edge      rxdma2host-destination-ring-mac1
+ 82:    8515757          0          0          0     GIC-0 191 Edge      wbm2host-tx-completions-ring3
+ 83:    7680733          0          0          0     GIC-0 190 Edge      wbm2host-tx-completions-ring2
+ 84:    5544005          0          0          0     GIC-0 189 Edge      wbm2host-tx-completions-ring1
+ 86:          0          0          0          0     GIC-0 198 Edge      tmc-etr
+ 87:          0          0          0          0     GIC-0 216 Edge      tsens_interrupt
+ 88:          4          0          0          0     GIC-0  47 Edge      cpr3
+ 89:          4          0          0          0     GIC-0 354 Edge      smp2p
+ 90:         24          0          0          0     GIC-0 200 Edge      glink-native
+ 91:          0          0          0          0     GIC-0 276 Edge      tzerror
+ 94:          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+ 95:          2          0          0          0     smp2p   1 Edge      q6v5 ready
+ 96:          0          0          0          0     smp2p   2 Edge      q6v5 handover
+ 97:          0          0          0          0     smp2p   3 Edge      q6v5 stop
+ 98:          0          0          0          0   msmgpio  19 Edge      soc:gpio_keys
+ 99:          0          0          0          0     GIC-0 131 Level     xhci-hcd:usb1
+100:          0          0          0          0     GIC-0 172 Level     xhci-hcd:usb3
+101:        129          0          0          0     GIC-0 353 Edge      glink-native
+IPI0:  54658745   88202974   88529254   92773144       Rescheduling interrupts
+IPI1:      4110       4335       3987       4096       Function call interrupts
+IPI2:         0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0       Timer broadcast interrupts
+IPI5:         0          0          0          0       IRQ work interrupts
+IPI6:         0          0          0          0       CPU wake-up interrupts
+Err:          0
+=== TICKS ===
+--- 15:29:06 ---
+cpu  41867 0 4475672 26652715 123 179676 89435 0 0 0
+cpu0 9862 0 966655 6702228 50 89454 80162 0 0 0
+cpu1 10356 0 1464558 6356900 16 30250 2517 0 0 0
+cpu2 11096 0 960681 6859077 28 29549 2901 0 0 0
+cpu3 10551 0 1083776 6734508 28 30422 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          549576 kB
+MemAvailable:     575352 kB
+Buffers:           10984 kB
+Cached:            53408 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:75
+therm:thermal_zone1:75
+therm:thermal_zone2:75
+therm:thermal_zone3:74
+therm:thermal_zone4:76
+therm:thermal_zone5:75
+therm:thermal_zone6:75
+--- 15:29:07 ---
+cpu  41869 0 4475768 26653023 123 179680 89436 0 0 0
+cpu0 9862 0 966676 6702309 50 89455 80162 0 0 0
+cpu1 10356 0 1464592 6356970 16 30251 2517 0 0 0
+cpu2 11096 0 960699 6859157 28 29549 2901 0 0 0
+cpu3 10553 0 1083800 6734585 28 30422 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          549380 kB
+MemAvailable:     575156 kB
+Buffers:           10984 kB
+Cached:            53384 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:75
+therm:thermal_zone3:74
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:08 ---
+cpu  41869 0 4475903 26653299 123 179685 89438 0 0 0
+cpu0 9862 0 966714 6702367 50 89458 80164 0 0 0
+cpu1 10356 0 1464618 6357048 16 30252 2517 0 0 0
+cpu2 11096 0 960734 6859229 28 29550 2901 0 0 0
+cpu3 10553 0 1083835 6734653 28 30423 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548788 kB
+MemAvailable:     574564 kB
+Buffers:           10984 kB
+Cached:            53384 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:76
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:75
+therm:thermal_zone6:76
+--- 15:29:09 ---
+cpu  41869 0 4476083 26653544 123 179691 89440 0 0 0
+cpu0 9862 0 966769 6702419 50 89460 80165 0 0 0
+cpu1 10356 0 1464659 6357112 16 30254 2517 0 0 0
+cpu2 11096 0 960773 6859294 28 29551 2901 0 0 0
+cpu3 10553 0 1083881 6734717 28 30425 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548536 kB
+MemAvailable:     574312 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:76
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:75
+therm:thermal_zone6:75
+--- 15:29:10 ---
+cpu  41869 0 4476301 26653724 123 179700 89441 0 0 0
+cpu0 9862 0 966840 6702450 50 89463 80167 0 0 0
+cpu1 10356 0 1464703 6357162 16 30255 2517 0 0 0
+cpu2 11096 0 960822 6859344 28 29553 2901 0 0 0
+cpu3 10553 0 1083935 6734767 28 30427 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548788 kB
+MemAvailable:     574564 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:11 ---
+cpu  41869 0 4476431 26653990 123 179706 89443 0 0 0
+cpu0 9862 0 966865 6702518 50 89465 80168 0 0 0
+cpu1 10356 0 1464727 6357234 16 30256 2517 0 0 0
+cpu2 11096 0 960869 6859401 28 29555 2901 0 0 0
+cpu3 10553 0 1083969 6734835 28 30428 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548788 kB
+MemAvailable:     574564 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:78
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:79
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:12 ---
+cpu  41869 0 4476573 26654261 123 179712 89445 0 0 0
+cpu0 9862 0 966902 6702589 50 89468 80170 0 0 0
+cpu1 10356 0 1464760 6357302 16 30258 2517 0 0 0
+cpu2 11096 0 960896 6859475 28 29556 2901 0 0 0
+cpu3 10553 0 1084013 6734893 28 30429 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548536 kB
+MemAvailable:     574312 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:77
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:75
+therm:thermal_zone6:76
+--- 15:29:13 ---
+cpu  41869 0 4476746 26654482 123 179719 89446 0 0 0
+cpu0 9862 0 966943 6702644 50 89470 80171 0 0 0
+cpu1 10356 0 1464803 6357358 16 30259 2517 0 0 0
+cpu2 11096 0 960934 6859536 28 29557 2901 0 0 0
+cpu3 10553 0 1084064 6734942 28 30431 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548788 kB
+MemAvailable:     574564 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:76
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:14 ---
+cpu  41870 0 4476920 26654705 123 179727 89448 0 0 0
+cpu0 9862 0 966999 6702687 50 89473 80173 0 0 0
+cpu1 10356 0 1464839 6357422 16 30261 2517 0 0 0
+cpu2 11097 0 960973 6859597 28 29559 2901 0 0 0
+cpu3 10553 0 1084108 6734998 28 30433 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548488 kB
+MemAvailable:     574264 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:79
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:15 ---
+cpu  41871 0 4477058 26654980 123 179732 89450 0 0 0
+cpu0 9862 0 967033 6702755 50 89475 80174 0 0 0
+cpu1 10356 0 1464875 6357490 16 30262 2517 0 0 0
+cpu2 11098 0 961010 6859664 28 29560 2902 0 0 0
+cpu3 10553 0 1084138 6735069 28 30434 3855 0 0 0
+MemTotal:         901568 kB
+MemFree:          548472 kB
+MemAvailable:     574248 kB
+Buffers:           10984 kB
+Cached:            53388 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:16 ---
+cpu  41871 0 4477212 26655229 123 179739 89451 0 0 0
+cpu0 9862 0 967063 6702819 50 89478 80176 0 0 0
+cpu1 10356 0 1464912 6357556 16 30263 2517 0 0 0
+cpu2 11098 0 961060 6859716 28 29562 2902 0 0 0
+cpu3 10553 0 1084176 6735136 28 30435 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548536 kB
+MemAvailable:     574312 kB
+Buffers:           10984 kB
+Cached:            53392 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:76
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:17 ---
+cpu  41871 0 4477413 26655434 123 179747 89453 0 0 0
+cpu0 9862 0 967111 6702871 50 89481 80177 0 0 0
+cpu1 10356 0 1464953 6357615 16 30265 2517 0 0 0
+cpu2 11098 0 961123 6859754 28 29563 2902 0 0 0
+cpu3 10553 0 1084225 6735193 28 30436 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548632 kB
+MemAvailable:     574408 kB
+Buffers:           10984 kB
+Cached:            53392 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:18 ---
+cpu  41871 0 4477556 26655687 123 179753 89455 0 0 0
+cpu0 9862 0 967136 6702937 50 89483 80178 0 0 0
+cpu1 10356 0 1464984 6357687 16 30266 2517 0 0 0
+cpu2 11098 0 961162 6859814 28 29565 2902 0 0 0
+cpu3 10553 0 1084273 6735247 28 30438 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548980 kB
+MemAvailable:     574756 kB
+Buffers:           10984 kB
+Cached:            53392 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:19 ---
+cpu  41871 0 4477688 26655967 123 179759 89456 0 0 0
+cpu0 9862 0 967170 6703009 50 89486 80180 0 0 0
+cpu1 10356 0 1465013 6357760 16 30267 2517 0 0 0
+cpu2 11098 0 961189 6859890 28 29566 2902 0 0 0
+cpu3 10553 0 1084315 6735306 28 30439 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          549484 kB
+MemAvailable:     575260 kB
+Buffers:           10984 kB
+Cached:            53392 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:76
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:20 ---
+cpu  41873 0 4477884 26656168 123 179768 89458 0 0 0
+cpu0 9862 0 967213 6703066 50 89489 80181 0 0 0
+cpu1 10356 0 1465058 6357811 16 30269 2517 0 0 0
+cpu2 11099 0 961257 6859921 28 29568 2902 0 0 0
+cpu3 10554 0 1084355 6735368 28 30441 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          549484 kB
+MemAvailable:     575260 kB
+Buffers:           10984 kB
+Cached:            53392 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:21 ---
+cpu  41874 0 4478040 26656418 123 179774 89460 0 0 0
+cpu0 9862 0 967244 6703136 50 89492 80183 0 0 0
+cpu1 10356 0 1465101 6357872 16 30270 2517 0 0 0
+cpu2 11100 0 961306 6859975 28 29569 2902 0 0 0
+cpu3 10554 0 1084388 6735434 28 30442 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          549232 kB
+MemAvailable:     575008 kB
+Buffers:           10984 kB
+Cached:            53392 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:22 ---
+cpu  41876 0 4478164 26656680 123 179780 89461 0 0 0
+cpu0 9862 0 967268 6703199 50 89494 80184 0 0 0
+cpu1 10356 0 1465132 6357940 16 30271 2517 0 0 0
+cpu2 11100 0 961344 6860034 28 29570 2902 0 0 0
+cpu3 10556 0 1084417 6735505 28 30443 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          549296 kB
+MemAvailable:     575072 kB
+Buffers:           10984 kB
+Cached:            53396 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:23 ---
+cpu  41879 0 4478315 26656921 123 179787 89463 0 0 0
+cpu0 9863 0 967301 6703265 50 89497 80186 0 0 0
+cpu1 10358 0 1465163 6358006 16 30273 2518 0 0 0
+cpu2 11100 0 961401 6860077 28 29572 2902 0 0 0
+cpu3 10556 0 1084449 6735572 28 30444 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548960 kB
+MemAvailable:     574736 kB
+Buffers:           10984 kB
+Cached:            53396 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:76
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:24 ---
+cpu  41880 0 4478489 26657159 123 179794 89465 0 0 0
+cpu0 9863 0 967335 6703329 50 89500 80187 0 0 0
+cpu1 10359 0 1465201 6358072 16 30274 2518 0 0 0
+cpu2 11100 0 961457 6860123 28 29574 2902 0 0 0
+cpu3 10556 0 1084494 6735633 28 30445 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548792 kB
+MemAvailable:     574568 kB
+Buffers:           10984 kB
+Cached:            53396 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:25 ---
+cpu  41880 0 4478621 26657408 123 179801 89466 0 0 0
+cpu0 9863 0 967372 6703393 50 89502 80189 0 0 0
+cpu1 10359 0 1465235 6358132 16 30275 2518 0 0 0
+cpu2 11100 0 961486 6860184 28 29575 2902 0 0 0
+cpu3 10556 0 1084527 6735697 28 30447 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548944 kB
+MemAvailable:     574720 kB
+Buffers:           10984 kB
+Cached:            53396 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:78
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:27 ---
+cpu  41881 0 4478766 26657651 123 179809 89468 0 0 0
+cpu0 9863 0 967409 6703453 50 89505 80190 0 0 0
+cpu1 10359 0 1465282 6358177 16 30277 2518 0 0 0
+cpu2 11101 0 961512 6860252 28 29576 2902 0 0 0
+cpu3 10556 0 1084562 6735767 28 30448 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548792 kB
+MemAvailable:     574568 kB
+Buffers:           10984 kB
+Cached:            53396 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:28 ---
+cpu  41881 0 4478934 26657892 123 179816 89470 0 0 0
+cpu0 9863 0 967453 6703503 50 89508 80192 0 0 0
+cpu1 10359 0 1465325 6358238 16 30279 2518 0 0 0
+cpu2 11101 0 961546 6860321 28 29578 2902 0 0 0
+cpu3 10556 0 1084609 6735829 28 30450 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548288 kB
+MemAvailable:     574064 kB
+Buffers:           10984 kB
+Cached:            53396 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:78
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:79
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:29 ---
+cpu  41882 0 4479086 26658149 123 179823 89471 0 0 0
+cpu0 9863 0 967490 6703568 50 89511 80193 0 0 0
+cpu1 10359 0 1465356 6358305 16 30280 2518 0 0 0
+cpu2 11101 0 961581 6860390 28 29579 2902 0 0 0
+cpu3 10557 0 1084658 6735885 28 30452 3856 0 0 0
+MemTotal:         901568 kB
+MemFree:          548792 kB
+MemAvailable:     574568 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:78
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:79
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:30 ---
+cpu  41882 0 4479229 26658402 123 179829 89473 0 0 0
+cpu0 9864 0 967525 6703625 50 89514 80195 0 0 0
+cpu1 10359 0 1465394 6358374 16 30281 2518 0 0 0
+cpu2 11101 0 961616 6860450 28 29580 2902 0 0 0
+cpu3 10557 0 1084692 6735952 28 30453 3857 0 0 0
+MemTotal:         901568 kB
+MemFree:          548792 kB
+MemAvailable:     574568 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:77
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:31 ---
+cpu  41885 0 4479411 26658618 123 179837 89475 0 0 0
+cpu0 9864 0 967561 6703685 50 89517 80196 0 0 0
+cpu1 10359 0 1465437 6358434 16 30282 2518 0 0 0
+cpu2 11102 0 961653 6860505 28 29582 2902 0 0 0
+cpu3 10559 0 1084758 6735992 28 30455 3857 0 0 0
+MemTotal:         901568 kB
+MemFree:          548052 kB
+MemAvailable:     573828 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:32 ---
+cpu  41892 0 4479543 26658879 123 179842 89476 0 0 0
+cpu0 9865 0 967598 6703745 50 89519 80198 0 0 0
+cpu1 10361 0 1465463 6358506 16 30283 2518 0 0 0
+cpu2 11104 0 961684 6860572 28 29583 2902 0 0 0
+cpu3 10561 0 1084797 6736055 28 30456 3857 0 0 0
+MemTotal:         901568 kB
+MemFree:          548660 kB
+MemAvailable:     574436 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:33 ---
+cpu  41893 0 4479727 26659137 123 179848 89478 0 0 0
+cpu0 9865 0 967645 6703806 50 89521 80199 0 0 0
+cpu1 10362 0 1465518 6358564 16 30285 2518 0 0 0
+cpu2 11104 0 961724 6860639 28 29584 2903 0 0 0
+cpu3 10561 0 1084839 6736125 28 30457 3857 0 0 0
+MemTotal:         901568 kB
+MemFree:          548684 kB
+MemAvailable:     574420 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:76
+therm:thermal_zone1:77
+therm:thermal_zone2:75
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:76
+--- 15:29:34 ---
+cpu  41893 0 4479923 26659338 123 179858 89480 0 0 0
+cpu0 9865 0 967695 6703855 50 89525 80201 0 0 0
+cpu1 10362 0 1465575 6358603 16 30287 2518 0 0 0
+cpu2 11104 0 961768 6860700 28 29585 2903 0 0 0
+cpu3 10561 0 1084884 6736178 28 30459 3857 0 0 0
+MemTotal:         901568 kB
+MemFree:          548904 kB
+MemAvailable:     574640 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:77
+therm:thermal_zone1:77
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:78
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+--- 15:29:35 ---
+cpu  41893 0 4480065 26659595 123 179865 89482 0 0 0
+cpu0 9865 0 967723 6703920 50 89528 80202 0 0 0
+cpu1 10362 0 1465621 6358658 16 30288 2518 0 0 0
+cpu2 11104 0 961800 6860768 28 29587 2903 0 0 0
+cpu3 10561 0 1084919 6736247 28 30461 3857 0 0 0
+MemTotal:         901568 kB
+MemFree:          548432 kB
+MemAvailable:     574168 kB
+Buffers:           10984 kB
+Cached:            53400 kB
+freq:cpu0:1800000
+freq:cpu1:1800000
+freq:cpu2:1800000
+freq:cpu3:1800000
+therm:thermal_zone0:78
+therm:thermal_zone1:78
+therm:thermal_zone2:76
+therm:thermal_zone3:75
+therm:thermal_zone4:79
+therm:thermal_zone5:76
+therm:thermal_zone6:77
+=== IRQ_END 15:29:36 ===
+           CPU0       CPU1       CPU2       CPU3       
+  4:    4154653    2983574    2821794    4002439     GIC-0  20 Level     arch_timer
+  6:          0          0          0          0     GIC-0  39 Level     arch_mem_timer
+  8:          0          0          0          0     GIC-0  23 Level     arm-pmu
+  9:          0          0          0          0     GIC-0 239 Level     bam_dma
+ 11:        273          0          0          0     GIC-0 270 Level     bam_dma
+ 13:          7          0          0          0     GIC-0 338 Level     msm_serial0
+ 14:      12353          0          0          0     GIC-0 127 Level     78b5000.spi
+ 15:      63365          0          0          0     GIC-0 178 Level     bam_dma
+ 17:          0          0          0          0     GIC-0 410 Level     edma_txcmpl
+ 18:          0          0          0          0     GIC-0 386 Level     edma_rxfill
+ 19:          0          0          0          0     GIC-0 378 Level     edma_rxdesc
+ 20:          0          0          0          0     GIC-0 411 Level     edma_misc
+ 21:   12102156          0          0          0     GIC-0 434 Edge      nss_empty_buf_sos
+ 22:   12534469          0          0          0     GIC-0 433 Edge      nss_empty_buf_queue
+ 23:          0          0          0          0     GIC-0 432 Edge      nss-tx-unblock
+ 24:  168390336          0          0          0     GIC-0 431 Edge      nss_queue0
+ 25:          0   80352225          0          0     GIC-0 430 Edge      nss_queue1
+ 26:          0          0   78846453          0     GIC-0 429 Edge      nss_queue2
+ 27:          0          0          0   78311198     GIC-0 428 Edge      nss_queue3
+ 28:          0          0          0          0     GIC-0 427 Edge      nss_coredump_complete
+ 29:          0          0          0          0     GIC-0 426 Edge      nss_paged_empty_buf_sos
+ 30:          0          0          0          0     GIC-0 425 Edge      nss_profile_dma
+ 32:          0          0          0          0     GIC-0  35 Edge      wdt_bark
+ 33:          0          0          0          0     GIC-0 357 Edge      q6v5 wdog
+ 37:          4          0          0          0     GIC-0 348 Edge      ce0
+ 38:   49114083          0          0          0     GIC-0 347 Edge      ce1
+ 39:      85123          0          0          0     GIC-0 346 Edge      ce2
+ 40:     171063          0          0          0     GIC-0 343 Edge      ce3
+ 42:          0          0          0          0     GIC-0 443 Edge      ce5
+ 44:          1          0          0          0     GIC-0  72 Edge      ce7
+ 46:          0          0          0          0     GIC-0 334 Edge      ce9
+ 47:          0          0          0          0     GIC-0 333 Edge      ce10
+ 48:          0          0          0          0     GIC-0  69 Edge      ce11
+ 55:          0          0          0          0     GIC-0 323 Edge      reo2ost-exception
+ 56:    4210241          0          0          0     GIC-0 322 Edge      wbm2host-rx-release
+ 57:       2510          0          0          0     GIC-0 321 Edge      reo2host-status
+ 58:    5396456          0          0          0     GIC-0 320 Edge      reo2host-destination-ring4
+ 59:    5392735          0          0          0     GIC-0 271 Edge      reo2host-destination-ring3
+ 60:    5396803          0          0          0     GIC-0 268 Edge      reo2host-destination-ring2
+ 61:    8067641          0          0          0     GIC-0 267 Edge      reo2host-destination-ring1
+ 66:        175          0          0          0     GIC-0 262 Edge      ppdu-end-interrupts-mac2
+ 67:   22886914          0          0          0     GIC-0 261 Edge      ppdu-end-interrupts-mac1
+ 69:          1          0          0          0     GIC-0 256 Edge      rxdma2host-monitor-status-ring-mac2
+ 70:          1          0          0          0     GIC-0 255 Edge      rxdma2host-monitor-status-ring-mac1
+ 72:          1          0          0          0     GIC-0 215 Edge      host2rxdma-host-buf-ring-mac2
+ 73:         14          0          0          0     GIC-0 212 Edge      host2rxdma-host-buf-ring-mac1
+ 75:          0          0          0          0     GIC-0 210 Edge      rxdma2host-destination-ring-mac2
+ 76:          0          0          0          0     GIC-0 209 Edge      rxdma2host-destination-ring-mac1
+ 82:    8524316          0          0          0     GIC-0 191 Edge      wbm2host-tx-completions-ring3
+ 83:    7687925          0          0          0     GIC-0 190 Edge      wbm2host-tx-completions-ring2
+ 84:    5551135          0          0          0     GIC-0 189 Edge      wbm2host-tx-completions-ring1
+ 86:          0          0          0          0     GIC-0 198 Edge      tmc-etr
+ 87:          0          0          0          0     GIC-0 216 Edge      tsens_interrupt
+ 88:          4          0          0          0     GIC-0  47 Edge      cpr3
+ 89:          4          0          0          0     GIC-0 354 Edge      smp2p
+ 90:         24          0          0          0     GIC-0 200 Edge      glink-native
+ 91:          0          0          0          0     GIC-0 276 Edge      tzerror
+ 94:          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+ 95:          2          0          0          0     smp2p   1 Edge      q6v5 ready
+ 96:          0          0          0          0     smp2p   2 Edge      q6v5 handover
+ 97:          0          0          0          0     smp2p   3 Edge      q6v5 stop
+ 98:          0          0          0          0   msmgpio  19 Edge      soc:gpio_keys
+ 99:          0          0          0          0     GIC-0 131 Level     xhci-hcd:usb1
+100:          0          0          0          0     GIC-0 172 Level     xhci-hcd:usb3
+101:        129          0          0          0     GIC-0 353 Edge      glink-native
+IPI0:  54733303   88304061   88643601   92876175       Rescheduling interrupts
+IPI1:      4110       4335       3987       4096       Function call interrupts
+IPI2:         0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0       Timer broadcast interrupts
+IPI5:         0          0          0          0       IRQ work interrupts
+IPI6:         0          0          0          0       CPU wake-up interrupts
+Err:          0
