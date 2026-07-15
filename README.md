@@ -45,3 +45,17 @@ bridge; one repetition per condition.
 
 IP addresses in the logs are RFC1918 lab-internal addresses.
 
+## Netdev 0x1A BoF: *Your Fu is Better Than Mine, 3.0!*
+
+The same Netdev 0x1A hosted the BoF *Your Fu is Better Than Mine, 3.0!*, where we
+demonstrated a vibe-coded [lunatik](https://github.com/luainkernel/lunatik) tool
+that answers "why is my packet dying?": a 57-line Lua kprobe on
+`kfree_skb_reason()` that names every drop in the system from the kernel's own
+headers, counts them in a table queried live from the in-kernel REPL, and traps
+one chosen reason to dump the registers and call site of the exact drop.
+
+The code lives on lunatik's
+[`netdev0x1A-fu`](https://github.com/luainkernel/lunatik/tree/netdev0x1A-fu)
+branch, and [`LUA-FU.md`](LUA-FU.md) is the companion artifact: the (translated)
+prompts that produced that script, and the steps to reproduce the demo.
+
